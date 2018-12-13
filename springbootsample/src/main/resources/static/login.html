@@ -1,0 +1,40 @@
+<DOCTYPE html>
+<html>
+      
+      <head>
+          <title>Login Form Design</title>
+          <body>
+              <script>
+              function login()
+                  {
+                      var un=document.forms["myform"]["uname"].value;
+                      var pass=document.forms["myform"]["pwd"].value;
+                      
+                      if(un=="vamsi")
+                          {
+                              if(pass=="123")
+                                  {
+                                      alert("login sucess");
+                                  }
+                              else
+                              {
+                                  
+                                  alert("incorrect password and userid");
+                              }
+                          }
+                      else{
+                          
+                          alert("incorrect username and password");
+                      }
+                  }
+                  
+              </script>
+              <form name="myform">
+              username:<input type="text" name="uname"><br>
+                  password:<input type="password" name="pwd"><br>
+                  <input type="submit" onclick="login()">
+              </form>
+          
+          </body>
+    </head>
+          </html>
